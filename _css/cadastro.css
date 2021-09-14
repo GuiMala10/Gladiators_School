@@ -8,7 +8,7 @@
 
 /*-----------------------login-panel-----------------------*/
 
-#login_panel{
+#cadastro{
     width: 50%;
     height: 100%;
     background-color: var(--cor_principal);
@@ -31,9 +31,9 @@
 
 /*-----------------------form-panel-----------------------*/
 
-#login_panel > #form_panel{
+#cadastro > #form_cadastro{
     width: 55%;
-    height: 45%;
+    height: 73%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,9 +43,18 @@
     
 }   
 
+#form_login > select {
+    height: 35px;
+    outline: none;
+    border-radius: 5px;
+    margin: 8px 0px;
+    border: 1px black solid;
+    padding: 10px;
+}
+
 /*-----------------------form-content---------------------*/
 
-#form_panel > #title_panel {
+#form_cadastro > #title_panel {
     width: 90%;
     height: 15%;
     background-color: var(--cor_secundaria);
@@ -56,7 +65,6 @@
     color: white;
     margin-top: 20px;
     
-
 }
 
 #title_panel > a {
@@ -68,7 +76,7 @@
     color: blue;
 }
 
-#form_panel > #form_login {
+#form_cadastro > #form_login {
     width: 90%;
     height: 100%;
     background-color: var(--cor_secudaria);
@@ -116,6 +124,17 @@
 
 }
 
+#form_login > #btnL{
+    height: 35px;
+    margin: 12px 0px;
+    border-radius: 5px;
+    color: white;
+    background-color: #4e0404;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
 /*-----------------------animation---------------------*/
 
 @keyframes one {
@@ -127,14 +146,14 @@
     
     to {
         opacity: 0.97;
-        transform: translateX(0px);
+        transform: translateX(2000px);
     }
 
 }
 
 .animation_one{
     animation-name: one;
-    animation-duration: 1.5s;
+    animation-duration: 10s;
     animation-fill-mode: backwards;
 
 }
