@@ -1,0 +1,117 @@
+/*---------------------------main---------------------------*/
+
+#main_panel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+/*-----------------------login-panel-----------------------*/
+
+#login_panel{
+    width: 50%;
+    height: 100%;
+    background-color: var(--cor_principal);
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /*Centralização horizontal*/
+    align-items: center; /*Centralização vertical*/
+}
+
+/*-----------------------logo-panel-----------------------*/
+
+#logo_panel{
+    width: 50%;
+    height: 100%;
+    background-image: url("../_images/img_login2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*-----------------------form-panel-----------------------*/
+
+#login_panel > #form_panel{
+    width: 55%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-color: var(--cor_secundaria);
+    border-radius: 30px;
+    
+}   
+
+/*-----------------------form-content---------------------*/
+
+#form_panel > #title_panel {
+    width: 90%;
+    height: 15%;
+    background-color: var(--cor_secundaria);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    margin-top: 20px;
+    
+
+}
+
+#title_panel > a {
+    text-decoration: none;
+    color:white;
+}
+
+#title_panel > a:hover{
+    color: blue;
+}
+
+#form_panel > #form_login {
+    width: 90%;
+    height: 100%;
+    background-color: var(--cor_secudaria);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin: 10px 10px 30px 10px;
+    padding: auto;
+    color: white;
+    font-weight: bold;
+    
+}
+
+/*-----------------------inputs---------------------*/
+
+#form_login > .input_login {
+    height: 35px;
+    outline: none;
+    border-radius: 5px;
+    margin: 8px 0px;
+    border: 1px black solid;
+    padding: 10px;
+}
+
+#form_login > .input_login:focus{
+    background-color: #f1faee;
+}
+
+#form_login > button {
+    height: 35px;
+    margin: 12px 0px;
+    border-radius: 5px;
+    color: white;
+    background-color:#023047;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#form_login > button:hover{
+    background-color: #219ebc;
+    transform: scale(1.03);
+    transition: 0.3s;
+
+}
