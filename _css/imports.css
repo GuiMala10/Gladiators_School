@@ -1,4 +1,7 @@
 @import "reset.css";
 @import "variables.css";
+@import "default.css";
 @import "cadastro.css";
 @import "login.css";
+@import "sidebar.css";
+@import "main.css";

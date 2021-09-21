@@ -1,0 +1,11 @@
+#logo-site > img{
+    margin-top: 8px;
+    width: 100px;
+}
+
+#logo-site > p {
+    font-weight: bold;
+    font-family: "Helvetica Neue", Sans-serif;
+    text-align: center;  
+    color:white; 
+}

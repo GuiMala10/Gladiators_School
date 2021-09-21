@@ -1,0 +1,25 @@
+#main-side{
+    width: var(--width_barside);
+    height: 100%;
+    background-color:var(--cor_terciaria);
+    justify-content: start;
+    
+}
+
+main {
+    width: calc(100% - var(--width_barside));
+    height: 100%;
+    background-color:var(--cor_secundaria);
+}
+
+main > #main-header{
+    width: 100%;
+    height: var(--height_mainheader);
+    background-color: var(--cor_terciaria);
+    
+}
+
+main > #main-content{
+    height: calc(100% - var(--height_mainheader));
+    width: 100%;
+}
